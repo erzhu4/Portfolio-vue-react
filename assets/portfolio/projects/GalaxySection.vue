@@ -8,7 +8,7 @@
                 <div class="project-description">
                     <p>A mini JavaScript game made using canvas.</p>
                 </div>
-                <a target="_blank" href="https://github.com/erzhu4/builderApp/tree/master/resources/assets/js/portfolio/projects/galaxy">GITHUB</a>
+                <a target="_blank" href="https://github.com/erzhu4/Portfolio-vue-react/tree/master/assets/galaxy/lib">GITHUB</a>
             </div>
             <galaxy v-if="showGalaxy" @closeWindow="hideGalaxyGame"></galaxy>
         </transition>

@@ -8,7 +8,7 @@
                 <div class="project-description">
                     <p>JavaScript game made using CSS, HTML, and jQuery.</p>
                 </div>
-                <a target="_blank" href="https://github.com/erzhu4/builderApp/tree/master/resources/assets/js/portfolio/projects/snake">GITHUB</a>
+                <a target="_blank" href="https://github.com/erzhu4/Portfolio-vue-react/tree/master/assets/snake/lib">GITHUB</a>
             </div>
             <snake v-if="showSnake" @closeWindow="hideSnakeGame"></snake>
         </transition>
