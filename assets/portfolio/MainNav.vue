@@ -49,7 +49,7 @@
             },
 
             showResume(){
-                window.open('https://drive.google.com/file/d/0B47kBMuebdfJcm1PSi1PWllEaHc/view?usp=sharing', '_blank');
+                window.open('https://drive.google.com/open?id=1QwyS_aiBjPmTUQMWBcyKHOqMw6rGGGgA', '_blank');
             }
         }
     }
