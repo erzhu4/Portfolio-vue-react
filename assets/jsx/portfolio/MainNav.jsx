@@ -5,9 +5,6 @@ import MainNavStyles from './styles/MainNavStyles.css.js';
 class MainNav extends React.Component {
 	constructor(props){
 		super(props);
-		this.state = {
-			currentPage: props.currentPage
-		};
 	}
 
     render() {

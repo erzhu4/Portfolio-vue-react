@@ -10,28 +10,35 @@ class Main extends React.Component{
         super(props);
         this.state = {
             currentPage: 'overview'
-        }
+        };
     }
 
     componentDidMount(){
-        this.tabChange(this.state.currentPage);
+        
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+      
+    }
+
+    getCorrectMainComponent(){
+        if (this.state.currentPage == 'overview'){
+            return <Overview />;
+        }
+        if (this.state.currentPage == 'projects'){
+            return <Projects />;
+        }
     }
 
     tabChange(val){
-        this.state.currentPage = val;
-        if (val == 'overview'){
-            ReactDom.render(<Overview />, document.getElementById('main-tab-container'));
-        }
-        if (val == 'projects'){
-            ReactDom.render(<Projects />, document.getElementById('main-tab-container'));
-        }
+        this.setState({currentPage: val});
     }
 
     render(){
         return (
             <div class="page-container">
-                <MainNav tabChange={this.tabChange} currentPage={this.state.currentPage} />
-                <div id="main-tab-container"></div>
+                <MainNav tabChange={this.tabChange.bind(this)} currentPage={this.state.currentPage} />
+                {this.getCorrectMainComponent.call(this)}
             </div>
         );
     }
