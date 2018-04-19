@@ -10,9 +10,9 @@ export default {
     navButton: {
         'color': 'white',
         'height': '50px',
-        'font-weight': 'bold',
+        'fontWeight': 'bold',
         'display': 'flex',
-        'align-items': 'center'
+        'alignItems': 'center'
     },
 
     navText: {
@@ -26,27 +26,27 @@ export default {
     },
 
     navTop: {
-        'background-image': 'url("images/mainnav.jpg")',
-        'background-size': '100%',
-        'background-position': 'center',
-        'min-height': '100%',
-        'font-weight': 'bold',
+        'backgroundImage': 'url("images/mainnav.jpg")',
+        'backgroundSize': '100%',
+        'backgroundPosition': 'center',
+        'minHeight': '100%',
+        'fontWeight': 'bold',
         'display': 'flex',
-        'align-items': 'center',
+        'alignItems': 'center',
         'height': '200px'
     },
 
     picture: {
         width: '70px',
         height: '70px',
-        'border-radius': '35px'
+        'borderRadius': '35px'
     },
 
     nameDiv: {
-        'font-size': '50px',
+        'fontSize': '50px',
         'color': 'white',
-        'text-align': 'center',
-        'text-shadow': '2px 2px #5c6ac4'
+        'textAlign': 'center',
+        'textShadow': '2px 2px #5c6ac4'
     },
 
     navBottom: {

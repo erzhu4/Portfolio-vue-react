@@ -36,7 +36,7 @@ class Main extends React.Component{
 
     render(){
         return (
-            <div class="page-container">
+            <div className="page-container">
                 <MainNav tabChange={this.tabChange.bind(this)} currentPage={this.state.currentPage} />
                 {this.getCorrectMainComponent.call(this)}
             </div>

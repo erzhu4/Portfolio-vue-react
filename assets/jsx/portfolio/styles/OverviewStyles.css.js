@@ -1,17 +1,24 @@
 export default {
     fa: {
-        'font-size': '100px',
+        'fontSize': '100px',
         'opacity': 0.5
     },
 
     bold: {
-        'font-weight': 700
+        'fontWeight': 700
     },
 
-    'title-right': {
+    titleRight: {},
+
+    titleLeft : {
+        'textAlign': 'center'
     },
 
-    'title-left' : {
-        'text-align': 'center'
+	skillTitle : {
+        'fontWeight': 700,
+        'fontSize': 'x-large',
+        'lineHeight': '12rem',
+        'color': '#828282',
+        'textAlign': 'center'
     }
 };
