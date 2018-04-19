@@ -16,7 +16,7 @@ class MainNav extends React.Component {
 	        	<div class="row" style={MainNavStyles.navTop}>
 		            <div class="container">
 		                <div class="text-center">
-		                	<img style={MainNavStyles.picture} src="portfolio-react/images/eric-zhu.jpg"></img>
+		                	<img style={MainNavStyles.picture} src="images/eric-zhu.jpg"></img>
 		                </div>
 		                <div style={MainNavStyles.nameDiv}>ERIC ZHU</div>
 		            </div>

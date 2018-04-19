@@ -18,6 +18,7 @@ class Main extends React.Component{
     }
 
     tabChange(val){
+        this.state.currentPage = val;
         if (val == 'overview'){
             ReactDom.render(<Overview />, document.getElementById('main-tab-container'));
         }
@@ -28,7 +29,7 @@ class Main extends React.Component{
 
     render(){
         return (
-            <div>
+            <div class="page-container">
                 <MainNav tabChange={this.tabChange} currentPage={this.state.currentPage} />
                 <div id="main-tab-container"></div>
             </div>

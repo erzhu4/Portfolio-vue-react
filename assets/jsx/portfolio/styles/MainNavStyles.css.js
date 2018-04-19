@@ -26,7 +26,7 @@ export default {
     },
 
     navTop: {
-        'background-image': 'url("portfolio-react/images/mainnav.jpg")',
+        'background-image': 'url("images/mainnav.jpg")',
         'background-size': '100%',
         'background-position': 'center',
         'min-height': '100%',

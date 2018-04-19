@@ -1,5 +1,9 @@
 import React from 'react';
 
+import TitleSection from './Overview/TitleSection.jsx';
+
+import OverviewStyles from './styles/OverviewStyles.css.js';
+
 class Overview extends React.Component {
     constructor(props){
         super(props);
@@ -7,8 +11,8 @@ class Overview extends React.Component {
 
     render(){
         return (
-            <div>
-                This is the overview component
+            <div class="home-container tab-container">
+                <TitleSection />
             </div>
         );
     }
