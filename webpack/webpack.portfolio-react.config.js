@@ -4,12 +4,12 @@ var path = require('path');
 var reactModule = {
 
     entry: [
-        './resources/assets/jsx/portfolio-react.jsx'
+        './assets/jsx/portfolio-react.jsx'
     ],
 
     output: {
         filename: 'portfolio-react.js',
-        path: path.join(__dirname, '../public/portfolio-react/js')
+        path: path.join(__dirname, '../js')
     },
 
     module : {
