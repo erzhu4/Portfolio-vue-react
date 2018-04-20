@@ -8193,7 +8193,36 @@ var SkillsSection = function (_React$Component) {
 	function SkillsSection(props) {
 		_classCallCheck(this, SkillsSection);
 
-		return _possibleConstructorReturn(this, (SkillsSection.__proto__ || Object.getPrototypeOf(SkillsSection)).call(this, props));
+		var _this = _possibleConstructorReturn(this, (SkillsSection.__proto__ || Object.getPrototypeOf(SkillsSection)).call(this, props));
+
+		_this.state = {
+			skills: [{
+				name: "Laravel"
+			}, {
+				name: "Rails"
+			}, {
+				name: "Vue"
+			}, {
+				name: "React"
+			}, {
+				name: "SQL"
+			}, {
+				name: "Python"
+			}, {
+				name: "PHP"
+			}, {
+				name: "Ruby"
+			}, {
+				name: "JavaScript"
+			}, {
+				name: "CSS"
+			}, {
+				name: "JAVA"
+			}, {
+				name: "HTML"
+			}]
+		};
+		return _this;
 	}
 
 	_createClass(SkillsSection, [{
@@ -8213,166 +8242,21 @@ var SkillsSection = function (_React$Component) {
 					_react2.default.createElement(
 						'div',
 						{ className: 'row' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-2 col-sm-4' },
-							_react2.default.createElement(
+						this.state.skills.map(function (skill, i) {
+							return _react2.default.createElement(
 								'div',
-								{ className: 'thumb-container' },
+								{ className: 'col-md-2 col-sm-4', key: i },
 								_react2.default.createElement(
 									'div',
-									{ style: _OverviewStylesCss2.default.skillTitle },
-									'Laravel'
+									{ className: 'thumb-container' },
+									_react2.default.createElement(
+										'div',
+										{ style: _OverviewStylesCss2.default.skillTitle },
+										skill.name
+									)
 								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-2 col-sm-4' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'thumb-container' },
-								_react2.default.createElement(
-									'div',
-									{ style: _OverviewStylesCss2.default.skillTitle },
-									'Ruby on Rails'
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-2 col-sm-4' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'thumb-container' },
-								_react2.default.createElement(
-									'div',
-									{ style: _OverviewStylesCss2.default.skillTitle },
-									'Vue.js'
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-2 col-sm-4' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'thumb-container' },
-								_react2.default.createElement(
-									'div',
-									{ style: _OverviewStylesCss2.default.skillTitle },
-									'React.js'
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-2 col-sm-4' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'thumb-container' },
-								_react2.default.createElement(
-									'div',
-									{ style: _OverviewStylesCss2.default.skillTitle },
-									'MySQL'
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-2 col-sm-4' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'thumb-container' },
-								_react2.default.createElement(
-									'div',
-									{ style: _OverviewStylesCss2.default.skillTitle },
-									'PostgreSQL'
-								)
-							)
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'row' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-2 col-sm-4' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'thumb-container' },
-								_react2.default.createElement(
-									'div',
-									{ style: _OverviewStylesCss2.default.skillTitle },
-									'PHP'
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-2 col-sm-4' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'thumb-container' },
-								_react2.default.createElement(
-									'div',
-									{ style: _OverviewStylesCss2.default.skillTitle },
-									'Ruby'
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-2 col-sm-4' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'thumb-container' },
-								_react2.default.createElement(
-									'div',
-									{ style: _OverviewStylesCss2.default.skillTitle },
-									'JavaScript'
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-2 col-sm-4' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'thumb-container' },
-								_react2.default.createElement(
-									'div',
-									{ style: _OverviewStylesCss2.default.skillTitle },
-									'CSS'
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-2 col-sm-4' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'thumb-container' },
-								_react2.default.createElement(
-									'div',
-									{ style: _OverviewStylesCss2.default.skillTitle },
-									'Vagrant'
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-2 col-sm-4' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'thumb-container' },
-								_react2.default.createElement(
-									'div',
-									{ style: _OverviewStylesCss2.default.skillTitle },
-									'NGINX'
-								)
-							)
-						)
+							);
+						})
 					)
 				)
 			);

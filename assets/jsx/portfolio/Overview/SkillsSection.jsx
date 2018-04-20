@@ -6,6 +6,47 @@ class SkillsSection extends React.Component {
 
 	constructor(props){
 		super(props);
+		this.state = {
+			skills: [
+				{
+					name: "Laravel"
+				},
+				{
+					name: "Rails"
+				},
+				{
+					name: "Vue"
+				},
+				{
+					name: "React"
+				},
+				{
+					name: "SQL"
+				},
+				{
+					name: "Python"
+				},
+				{
+					name: "PHP"
+				},
+				{
+					name: "Ruby"
+				},
+				{
+					name: "JavaScript"
+				},
+				{
+					name: "CSS"
+				},
+				{
+					name: "JAVA"
+				},
+				{
+					name: "HTML"
+				}
+
+			]
+		};
 	}
 
 	render(){
@@ -13,70 +54,15 @@ class SkillsSection extends React.Component {
 		    <div>
 		        <p className="text-center">Relevant Web Technologies:</p>
 		        <div className="container clear-section-container">
-		            <div className="row">
-		                <div className="col-md-2 col-sm-4">
+	                <div className="row">
+	                	{this.state.skills.map((skill, i) => 
+	                		<div className="col-md-2 col-sm-4" key={i}>
 		                        <div className="thumb-container">
-		                            <div style={Styles.skillTitle}>Laravel</div>
+		                            <div style={Styles.skillTitle}>{skill.name}</div>
 		                        </div>
-		                </div>
-		                <div className="col-md-2 col-sm-4">
-		                        <div className="thumb-container">
-		                            <div style={Styles.skillTitle}>Ruby on Rails</div>
-	                            </div>
-		                </div>
-		                <div className="col-md-2 col-sm-4">
-		                        <div className="thumb-container">
-		                            <div style={Styles.skillTitle}>Vue.js</div>
-	                            </div>
-		                </div>
-		                <div className="col-md-2 col-sm-4">
-		                        <div className="thumb-container">
-		                            <div style={Styles.skillTitle}>React.js</div>
-	                            </div>
-		                </div>
-		                <div className="col-md-2 col-sm-4">
-		                        <div className="thumb-container">
-		                            <div style={Styles.skillTitle}>MySQL</div>
-	                            </div>
-		                </div>
-		                <div className="col-md-2 col-sm-4">
-		                        <div className="thumb-container">
-		                            <div style={Styles.skillTitle}>PostgreSQL</div>
-	                            </div>
-		                </div>
-		            </div>
-		            <div className="row">
-		                <div className="col-md-2 col-sm-4">
-		                        <div className="thumb-container">
-		                            <div style={Styles.skillTitle}>PHP</div>
-	                            </div>
-		                </div>
-		                <div className="col-md-2 col-sm-4">
-		                        <div className="thumb-container">
-		                            <div style={Styles.skillTitle}>Ruby</div>
-	                            </div>
-		                </div>
-		                <div className="col-md-2 col-sm-4">
-		                        <div className="thumb-container">
-		                            <div style={Styles.skillTitle}>JavaScript</div>
-	                            </div>
-		                </div>
-		                <div className="col-md-2 col-sm-4">
-		                        <div className="thumb-container">
-		                            <div style={Styles.skillTitle}>CSS</div>
-	                            </div>
-		                </div>
-		                <div className="col-md-2 col-sm-4">
-		                        <div className="thumb-container">
-		                            <div style={Styles.skillTitle}>Vagrant</div>
-	                            </div>
-		                </div>
-		                <div className="col-md-2 col-sm-4">
-		                        <div className="thumb-container">
-		                            <div style={Styles.skillTitle}>NGINX</div>
-	                            </div>
-		                </div>
-		            </div>
+	                		</div>
+	                	)}
+                	</div>
 		        </div>
 		    </div>
 		);
